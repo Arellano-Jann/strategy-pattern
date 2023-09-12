@@ -4,10 +4,13 @@ public class Card implements Payment{
 
     public Card(int sale){
         this.saleAmt = sale;
+        System.out.println("Sale: " + saleAmt);
     }
     public void pay(int customerCardNumber){
         this.cardNumber = customerCardNumber;
+        System.out.println("Card: " + customerCardNumber);
     }
+    
 
     // public int getSale(){
     //     return this.saleAmt;

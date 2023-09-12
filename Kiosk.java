@@ -8,5 +8,6 @@ public class Kiosk extends POS {
     public void takeOrder(Ticket newOrder){
         this.tickets[curr] = newOrder;
         curr = (curr + 1) % 5;
+        System.out.println("Ticket order taken!");
     }
 }

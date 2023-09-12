@@ -4,9 +4,11 @@ public class Cash implements Payment{
 
     public Cash(int sale){
         this.saleAmt = sale;
+        System.out.println("Sale: " + saleAmt);
     }
     public void pay(int paymentAmt){
-        this.changeAmt = saleAmt - paymentAmt;
+        this.changeAmt = paymentAmt - saleAmt;
+        System.out.println("Change: " + changeAmt);
     }
 
     // public int getSale(){

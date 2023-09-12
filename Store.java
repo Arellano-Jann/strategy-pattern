@@ -8,5 +8,6 @@ public class Store extends POS {
     public void takeOrder(Computer newOrder){
         this.computerOrders[curr] = newOrder;
         curr = (curr + 1) % 5;
+        System.out.println("Computer order taken!");
     }
 }
