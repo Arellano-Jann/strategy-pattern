@@ -1,20 +1,20 @@
 package Payment;
 public class Cash implements Payment{
-    int saleAmt, paymentAmt, changeAmt;
+    int saleAmt, changeAmt;
 
-    Cash(){
+    Cash(int sale){
+        this.saleAmt = sale;
+    }
+    public void pay(int paymentAmt){
+        this.changeAmt = saleAmt - paymentAmt;
+    }
 
-    }
-    public void pay(int){
-        
-    }
-
-    public void getSale(int amt){
-        this.saleAmt = amt;
-        System.out.println("This was the sale: " + saleAmt);
-    }
-    public void takePayment(int amt){
-        changeAmt = saleAmt - paymentAmt;
-        System.out.println("Here's ur change: $" + changeAmt);
-    }
+    // public void getSale(int amt){
+    //     this.saleAmt = amt;
+    //     System.out.println("This was the sale: " + saleAmt);
+    // }
+    // public void takePayment(int amt){
+    //     changeAmt = saleAmt - paymentAmt;
+    //     System.out.println("Here's ur change: $" + changeAmt);
+    // }
 }
