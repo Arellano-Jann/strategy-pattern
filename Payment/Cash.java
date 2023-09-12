@@ -2,6 +2,13 @@ package Payment;
 public class Cash implements Payment{
     int saleAmt, paymentAmt, changeAmt;
 
+    Cash(){
+
+    }
+    public void pay(int){
+        
+    }
+
     public void getSale(int amt){
         this.saleAmt = amt;
         System.out.println("This was the sale: " + saleAmt);

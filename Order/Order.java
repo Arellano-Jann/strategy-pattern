@@ -1,4 +1,4 @@
 package Order;
-public class Order {
-    
+public interface Order {
+    public void setPayment(Payment);
 }
