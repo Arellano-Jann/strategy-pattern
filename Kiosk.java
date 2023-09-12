@@ -1,3 +1,7 @@
+import Order.Order;
+
 public class Kiosk {
-    public void takeOrder(Order order);
+    public void takeOrder(Order order){
+
+    }
 }

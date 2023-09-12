@@ -1,11 +1,13 @@
 package Order;
 import java.util.Random;
 
+import Payment.Payment;
+
 public class Computer implements Order {
     int orderNumber;
     Payment payment;
     Computer(int sale){
-        setPayment(Payment(sale))
+        setPayment(Payment(sale));
     }
     public void generateOrderNumber(){
         Random rand = new Random();

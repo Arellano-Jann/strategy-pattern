@@ -1,3 +1,7 @@
+import Order.Order;
+
 public abstract class POS{
-    public void takeOrder(Order order);
+    public void takeOrder(Order order){
+
+    }
 }

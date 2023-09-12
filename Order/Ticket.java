@@ -1,4 +1,7 @@
 package Order;
+
+import Payment.Payment;
+
 public class Ticket implements Order {
     int orderNumber;
     Payment payment;
