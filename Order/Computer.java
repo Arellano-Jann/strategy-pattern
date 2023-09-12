@@ -6,8 +6,8 @@ import Payment.Payment;
 public class Computer implements Order {
     int orderNumber;
     Payment payment;
-    Computer(int sale){
-        setPayment(Payment(sale));
+    public Computer(){
+        generateOrderNumber();
     }
     public void generateOrderNumber(){
         Random rand = new Random();

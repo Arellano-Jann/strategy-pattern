@@ -1,3 +1,6 @@
 all: 
-	find -name "*.java" > sources.txt
-	javac @sources.txt
+	find -name "*.java" | xargs javac
+	java Driver
+
+clean:
+	find -name "*.class" | xargs rm

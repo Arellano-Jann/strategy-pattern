@@ -1,7 +1,8 @@
 import Order.Order;
 
 public abstract class POS{
-    public void takeOrder(Order order){
-
+    Order order;
+    public void takeOrder(Order newOrder){
+        this.order = newOrder;
     }
 }

@@ -5,8 +5,8 @@ import Payment.Payment;
 public class Ticket implements Order {
     int orderNumber;
     Payment payment;
-    Ticket(int sale){
-        setPayment(Payment(sale));
+    public Ticket(int newOrderNumber){
+        this.orderNumber = newOrderNumber;
     }
     public void setPayment(Payment newPayment){
         this.payment = newPayment;
